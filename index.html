@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="icon" type="image/svg" href="./images/Online Registration.png" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header section for assignment by Razmi chaudhary -->
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register students, manage records, and keep data safe.</p>
+    </header>
+    <!-- foarm section of  assignmnet by Razmi chaudhary -->
+    <div class="container">
+        <h2>Register a New Student</h2>
+        <form id="studentForm">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" placeholder="Enter full name" required>
+
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" placeholder="Enter student ID" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" placeholder="Enter contact number" required>
+
+            <button type="submit">Register Student</button>
+        </form>
+    </div>
+     <div>
+        <!-- registered students data section  -->
+        <span><h2>Registered Students</h2></span>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Student records will be dynamically added here -->
+            </tbody>
+        </table>
+     </div>
+    <script src="./script.js"></script>
+</body>
+</html>

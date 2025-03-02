@@ -1,0 +1,203 @@
+/* style for the body of the assignment   */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4CAF50, #2196F3);  /* Gradient background */
+    color: black;  /* Text color for better contrast */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);  /* Dark background with some transparency */
+    color: #ffc107;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);  /* Subtle shadow effect */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+span{
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+/* container or foarm filling section style  */
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.container:hover {
+    transform: translateY(-10px); 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 15px 0;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+input:focus, button:focus {
+    border-color: black; 
+    outline: none;
+}
+/* button style to attract and easy to use style  */
+button {
+    background-color: #13939b;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgb(64, 143, 22);
+    color: black;
+}
+/* registered students data style  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #13939b;
+    color: black;
+    font-size: 1.1em;
+}
+
+td {
+    background-color:#f9f9f9;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+/* Mobile: Small screens */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        display: block;
+        text-align: left;
+        padding: 10px 5px;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+        display: block;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: inline-block;
+    }
+}
+
+/* Tablet: Medium screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+
+    input, button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .delete-btn, .edit-btn {
+        padding: 8px 14px;
+    }
+}
+
+/* Laptop: Larger screens */
+@media (min-width: 769px) {
+    .container {
+        width: 50%;
+    }
+
+    input, button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .delete-btn, .edit-btn {
+        padding: 10px 16px;
+    }
+
+    table th, table td {
+        padding: 14px;
+    }
+}
